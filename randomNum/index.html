@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор Случайных Чисел</title>
+    <style>
+        #div2{
+            margin-top: 200px;
+            margin-left: 400px;
+        }
+        #minNumber{
+            width: 200px;
+            height: 30px;
+        }
+        #maxNumber{
+            width: 200px;
+            height: 30px;
+        }
+        #b{
+            border: 0px;
+            padding: 0px;
+            background-color: blue;
+            width: 80px;
+            height: 30px;
+            color: white;
+        }
+        #b:hover{
+            background-color: rgb(1, 1, 63);
+        }
+        #number{
+            display: none;
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 200px;
+        }
+        #subm{
+            display: none;
+            background-color: brown;
+            border: 0px;
+            padding: 0px;
+            width: 280px;
+            height: 60px;
+            margin-top: 290px;
+            color: white;
+            font-size: 20px;
+        }
+        #subm:hover{
+            background-color: rgb(51, 10, 10)
+        }
+        #span{
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+    <div id="div2">
+        <h1>Гениратор случайных чисел</h1>
+        <h2>Введите диапозон</h2>
+        <span id="span">неверное значение</span>
+        <form id="bu" method="post" onsubmit="return generateRandomNumber()">
+        от
+        <input type="number" id="minNumber" value="">
+        до
+        <input type="number" id="maxNumber" value="">
+        <button id="b">Получить число</button>
+        </form>
+    </div>
+</div>
+<div id="number">
+</div>
+    <button onclick="window.location.reload();" id="subm">Назад</button>
+    <script src="srl.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+</html>
